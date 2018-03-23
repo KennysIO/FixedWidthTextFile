@@ -1,0 +1,23 @@
+{
+  "name": "kennysio/fixed-width-text-file",
+  "description": "A simple library to deal with fixed width delimited Files",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "keywords": ["file", "api", "fixed", "width"],
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Kenny Wildfeuer",
+      "email": "hello@kennys.io",
+      "homepage": "https://kennys.io"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src"
+    }
+  }
+}
