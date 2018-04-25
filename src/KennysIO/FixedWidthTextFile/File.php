@@ -15,11 +15,19 @@ class File
 {
     protected $rows = array();
 
+    protected $fieldDivider = '';
+
+    public function setFieldDivider($fieldDivider = '')
+    {
+        $this->fieldDivider = $fieldDivider;
+    }
+
     /**
      * @param Row $row
      */
     public function addRow(Row $row)
     {
+        $row->setFieldDivider( $this->fieldDivider );
         $this->rows[] = $row;
     }
 

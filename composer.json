@@ -4,7 +4,7 @@
   "minimum-stability": "dev",
   "license": "MIT",
   "keywords": ["file", "api", "fixed", "width"],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     {
       "name": "Kenny Wildfeuer",

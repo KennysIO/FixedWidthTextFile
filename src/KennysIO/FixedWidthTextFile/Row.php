@@ -15,6 +15,13 @@ class Row
 {
     protected $fields = array();
 
+    protected $fieldDivider = '';
+
+    public function setFieldDivider($fieldDivider = '')
+    {
+        $this->fieldDivider = $fieldDivider;
+    }
+
     public function addField(Field $field)
     {
         $this->fields[] = $field;
@@ -22,6 +29,6 @@ class Row
 
     public function __toString()
     {
-        return implode('', $this->fields);
+        return implode($this->fieldDivider, $this->fields);
     }
 }
